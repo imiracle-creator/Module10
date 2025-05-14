@@ -1,21 +1,18 @@
-// Module 10 InternationalDivision.Java Isaiah Miracle 05/18/2025
-public class InternationalDivision extends Division {
-    private String country;
-    private String language;
+// Module 10 DomesticDivision.Java Isaiah Miracle 05/18/2025
+public class DomesticDivision extends Division {
+    private String state;
 
-    public InternationalDivision(String divisionName, int accountNumber, String country, String language) {
+    public DomesticDivision(String divisionName, int accountNumber, String state) {
         super(divisionName, accountNumber);
-        this.country = country;
-        this.language = language;
+        this.state = state;
     }
 
     @Override
     public void display() {
-        System.out.println("International Division:");
+        System.out.println("Domestic Division:");
         System.out.println("Name: " + divisionName);
         System.out.println("Account Number: " + accountNumber);
-        System.out.println("Country: " + country);
-        System.out.println("Language: " + language);
+        System.out.println("State: " + state);
         System.out.println();
     }
 }
